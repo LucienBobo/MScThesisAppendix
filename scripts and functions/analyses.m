@@ -146,7 +146,8 @@ fprintf('  With futures:\n     risk-averse objective = %.0f \n',riskav_tso_f);
 
 [expProf_dh,minProf_dh,expProf_dh_f,minProf_dh_f,minProf_dh_f_analytical,riskav_dh,riskav_dh_f]=compute_yearahead_flexiblevolume(A_dh_s,F_dh_s,Q_f(:,:,1),X_f{1},L_f,price_scens_long(:,:,:),0,displayDistrib,alpha,beta_real);
 fprintf('\nDH utility:\n');
-fprintf('  Without forwards:\n     exp. benefit = %.0f // min. benefit = %.0f // guaranteed benefit = %0.f \n',expProf_dh,minProf_dh,OpportunityCostDH);
+%fprintf('  Without forwards:\n     exp. benefit = %.0f // min. benefit = %.0f // guaranteed benefit = %0.f \n',expProf_dh,minProf_dh,OpportunityCostDH);
+fprintf('  Without forwards:\n     exp. benefit = %.0f // min. benefit = %.0f // guaranteed benefit = %0.f \n',expProf_dh,minProf_dh,0);
 fprintf('  With forwards:\n     exp. benefit = %.0f // min. benefit = %.0f // guaranteed benefit = %0.f \n',expProf_dh_f,minProf_dh_f,minProf_dh_f_analytical);
 fprintf('  Without forwards:\n     risk-averse objective = %.0f \n',riskav_dh);
 fprintf('  With forwards:\n     risk-averse objective = %.0f \n',riskav_dh_f);
