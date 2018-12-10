@@ -4,6 +4,7 @@ clc;
 clear;
 addpath(genpath('scripts and functions'));
 
+
 %% Global parameters
 
 global K % number of time steps
@@ -44,7 +45,6 @@ analyses;
 ws=8; % wind time offset
 wa=1.3; % wind amplitude change
 la=0.8; % load amplitude change
-spot_auction;
 
 disp('Clearing spot market...');
 [Q_s,X_s,L_s,SW_s]=clearing(offers_s);
